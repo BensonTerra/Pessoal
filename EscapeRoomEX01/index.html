@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Escape Room nº1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="custom-Header">
+      <p>Escape Room EX1</p>
+    </header>
+    <div id="room">
+      <div id="door"></div>
+      <div id="livro"></div>
+    </div>
+
+
+    <dialog id="dialogQuiz">                     <!--Toda informação que ira aparecer deve ser inplementada dentro de <dialog> content </dialog> -->
+
+      <fieldset>
+        <h1 id="quizStyle">Quiz</h1>
+        <hr>
+        <div>
+          <form id="quizForm">
+            <h2>Questão nº<span id="nQuestao">1</span></h2>
+            <h3 id="pergunta">pergunta</h3>
+            <input type="radio" value="0" name="answers"> <span id="answer1"></span><br>
+            <input type="radio" value="1" name="answers"> <span id="answer2"></span><br>
+            <input type="radio" value="2" name="answers"> <span id="answer3"></span><br>
+            <input type="radio" value="3" name="answers"> <span id="answer4"></span><br>
+          </form>
+        </div>
+        <button id="close">Fechar</button>    
+      </fieldset>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
