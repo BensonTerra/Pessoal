@@ -1,42 +1,40 @@
-#custom-Header
-{
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  color: aliceblue;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-#room 
-{
+
+.room {
   width: 500px;
   height: 500px;
   border: 10px solid #000;
   position: relative;
   margin: 50px auto;
 }
-#door 
-{
+
+.door {
   width: 100px;
   height: 200px;
-  background: #9b7653;
+  background: red;
   position: absolute;
   right: 0;
-  top: 80%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-#livro
-{
-  width:  50px;
-  height: 50px;
-  background: #ff0000;
-  position: absolute;
-  right: 50%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
 }
 
-#chave {
+.book {
+  width: 50px;
+  height: 50px;
+  background: rgb(76, 62, 62);
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  z-index: 2;
+}
+
+.key {
   width: 30px;
   height: 30px;
   background: #f90;
@@ -48,9 +46,13 @@
   display: none;
 }
 
-#quizStyle
-{
-  display: flex;
-  justify-content: center;
-  width: 300px;
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #f90;
+  width: 400px;
+  height: 200px;
+  z-index: 999;
 }
