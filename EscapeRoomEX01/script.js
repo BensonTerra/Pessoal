@@ -71,7 +71,7 @@ function carregarQuestoes()
   let resposta4 = document.getElementById("resposta4")
   resposta4.innerHTML = question.resposta[3]
 
-  const answers = document.querySelectorAll("[name = 'answers']")
+  const answers = document.querySelectorAll("[name = 'answers']") //util para capturar <option></option>
   answers.forEach( answer => {
     answer.addEventListener("click",checkSuccess)
   })
