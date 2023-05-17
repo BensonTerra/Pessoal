@@ -4,12 +4,16 @@ console.log(txtScore.innerHTML)
 let btnScore = document.getElementById("btn1")
 console.log(btnScore.value)
 
-let time = 10000
+let time = 100
 let score =0
 
 setInterval(() => 
 {
   time -= 1
+  if(time == 0)
+  {
+    alert("Perdeu")
+  }
   console.log(time)
 }, 1000);
 
