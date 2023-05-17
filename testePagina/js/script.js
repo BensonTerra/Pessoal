@@ -6,7 +6,7 @@ console.log(btnScore.value)
 
 let time = 100
 let score =0
-
+/*
 setInterval(() => 
 {
   time -= 1
@@ -16,6 +16,7 @@ setInterval(() =>
   }
   console.log(time)
 }, 1000);
+*/
 
 btnScore.addEventListener("click", teste1)
 function teste1()
